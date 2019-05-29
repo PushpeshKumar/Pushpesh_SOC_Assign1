@@ -1,0 +1,28 @@
+<html>
+
+<head>
+    <title>index3</title>
+</head>
+
+<body>
+    <h1 align="center">MY FIRST SUB-WINDOW</h1>
+
+    <input type="button" value="wikipedia" text="Wikipedia" onclick="display(1)"><br>
+    <input type="button" value="bing" text="Bing" onclick="display(2)"><br>
+    <input type="button" value="bbc" text="BBC" onclick="display(3)"><br>
+
+    <script>
+        function display(f) {
+            if (f == 1)
+                document.getElementById("fst").src = "https://www.wikipedia.org"
+            if (f == 2)
+                document.getElementById("fst").src = "https://www.bing.com"
+            if (f == 3)
+                document.getElementById("fst").src = "https://www.bbc.com"
+        }
+    </script>
+
+    <iframe id="fst" height="200px" width=" 300px "></iframe>
+</body>
+
+</html>

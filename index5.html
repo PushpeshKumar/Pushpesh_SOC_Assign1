@@ -1,0 +1,27 @@
+<html>
+
+<head>
+    <title>index5</title>
+</head>
+
+<body>
+    <h1 align="center">My First Sub-Window</h1>
+    Site &nbsp&nbsp&nbsp&nbsp<input type="text" id="tf1"><br> Height <input type="text" id="tf2"><br> Width &nbsp<input type="text" id="tf3"><br> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    <input type="button" value="GO!" onclick="display()">
+    <br><br>
+
+    <script>
+        function display(f) {
+            var site = document.getElementById('tf1').value;
+            var ht = document.getElementById('tf2').value;
+            var wt = document.getElementById('tf3').value;
+            document.getElementById("fst").src = site;
+            document.getElementById("fst").height = ht;
+            document.getElementById("fst").width = wt;
+        }
+    </script>
+    <iframe id="fst" height="240px" width="300px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRf94PabXJ9RGJxwv-PrgFfo0mhm80p5tobKtU-Z9SZgvKfePKX">
+	</iframe>
+</body>
+
+</html>
